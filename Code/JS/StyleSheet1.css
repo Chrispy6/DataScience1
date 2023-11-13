@@ -1,0 +1,46 @@
+﻿body{
+    background-color: black;
+    color:white;
+    font-family: "futura-pt",sans-serif;
+}
+h1{
+    font-size: 100px;
+}
+h2{
+    font-size: 150%;
+    font-weight: 0;
+}
+.opener-sub-container {
+    width: 550px;
+    margin: 0 auto;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.opener-sub {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.4em;
+    width: 290px;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 0px;
+}
+
+
+.opener-by-lines {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-top: 4px;
+    margin-left: 40px;
+}

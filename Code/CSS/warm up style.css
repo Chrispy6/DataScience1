@@ -1,9 +1,9 @@
-﻿body
-{
-	background-color:blue;
+﻿
+p{
+	color: blue;
 }
-h2
+p:hover
 {
+	background-color: blue;
 	color: white;
-	text-align: center;
 }
