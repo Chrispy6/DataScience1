@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>
+    </title>
+    <script src="https://d3js.org/d3.v5.js"></script>
+</head>
+<body>
+<div id="scatterplot-container"></div>
+<script>
+  // Sample data
+  var data = [
+    { x: 10, y: 20 },
+    { x: 30, y: 40 },
+    { x: 50, y: 60 },
+    { x: 70, y: 80 },
+    { x: 90, y: 100 }
+  ];
+
+  // Set up the SVG container
+  var svg = d3.select("#scatterplot-container")
+              .append("svg")
+              .attr("width", 400)
+              .attr("height", 200);
+
+  // Create circles for each data point
+  svg.selectAll("circle")
+     .data(data)
+     .enter()
+     .append("circle")
+     .attr("cx", function(d) { return d.x; })
+     .attr("cy", function(d) { return d.y; })
+     .attr("r", 5) // radius of the circle
+     .attr("fill", "blue");
+
+  // Add interactivity (mouseover and mouseout events)
+  svg.selectAll("circle")
+     .on("mouseover", function(d) {
+       d3.select(this).attr("fill", "orange");
+     })
+     .on("mouseout", function(d) {
+       d3.select(this).attr("fill", "blue");
+     });
+</script>
+</body>
+</html>
