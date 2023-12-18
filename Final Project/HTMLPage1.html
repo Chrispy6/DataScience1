@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My Data Story</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+    <h1 id="title">Has <b>Netflix's</b> focus shifted from <u>movies</u> to <u>TV shows?</u></h1>
+
+    <p id="intro">
+        Growing up, many of us considered Netflix as a streaming service primarily for movies. However, in recent years, this trend has changed, and using the numbers, we can see how Netflix's focus has shifted.
+    </p>
+
+    <p id="picdes">
+        Using <a href="https://www.kaggle.com/datasets/shivamb/netflix-shows">this</a> dataset, which consists of details about movies and TV shows on Netflix, we can see from <span id="showPdfLink" style="color: red; cursor: pointer;">graphing</span> it during 2013-2021, there have been more movies than TV shows on Netflix, indicating that Netflix has been mostly centered around movies over this time period. Another way you can see this is if you take the average of movies and TV show each year, which are <b>500</b> and <b>261</b>, respectively. But what can we find out about the trend of movies and TV shows during each year?
+    </p>
+
+    <img id="pic1" src="Netflix_Avg_Dis.PNG">
+
+    <div class="content" id="picdes2">
+        <p>
+            When you look at the numbers of movies and TV shows in each year, there is a gradual increase in TV shows compared to movies. A few calculations show us that there was an average increase of 400% for TV shows from 2013-2021, while there was only an increase of about 23% in movies. Given this information, it's clear that Netflix is migrating from movies to TV shows.
+        </p>
+    </div>
+    
+    <div class="content" id="pic2">
+        <img src="Netflix_Movie_Show_Distribution.PNG">
+    </div>
+
+    <script src="Script1.js"></script>
+
+    <p id="conclusion">
+        In summary, Netflix has prioritized TV shows over movies in recent years. The big question is, how should we respond to this change? If you are like me and prefer TV shows over movies, you might be content with this change. However, for those who enjoyed Netflix's movie-centered aspect, considering switching to <b>Prime Video</b> might be a good option. Prime Video offers a broader selection of movies compared to Netflix, and it seems that Netflix isn't trending back to its original movie-centric state. So, exploring other streaming services might be a wise decision.
+    </p>
+
+</body>
+</html>

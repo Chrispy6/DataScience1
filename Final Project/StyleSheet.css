@@ -1,3 +1,66 @@
-﻿body
-{
+﻿body {
+    background-color: #001f3f;
+    color: white;
+}
+#title{
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+#intro{
+    font-size: 1vw;
+    max-width: 40vw;
+    margin: 0 auto; 
+}
+
+#pic1{
+    width: 30%;
+    height: 25%;
+    padding-top: 100px;
+    padding-left: 100px;
+    visibility: hidden;
+}
+
+#picdes{
+    font-size: 1vw;
+    max-width: 20vw;
+    padding-top: 250px;
+    padding-left: 700px;
+    float: left;
+}
+
+#pic2{
+    width: 40%;
+    height: 35%;
+    padding-left: 100px;
+    padding-top: 150px;
+}
+
+#picdes2{
+    font-size: 1vw;
+    max-width: 20vw;
+    padding-top: 0px;
+    padding-left: 700px;
+    float: left;
+}
+
+#conclusion{
+    font-size: 1vw;
+    max-width: 40vw;
+    margin: 0 auto;
+    padding-top: 300px;
+    padding-bottom: 100px;
+}
+
+a{
+    color: red; 
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
